@@ -1,0 +1,37 @@
+div {
+    background-color: #444444;
+    display: flex-column;
+    display:webkit-flex-column;
+}
+input {
+    margin: 10px;
+    position: absolute;
+    left: 100px;
+}
+label {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 10px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: inset 1px 0 #000000;
+}
+#green {
+   border: 8px solid green;
+}
+#red {
+    border: 8px solid red;
+}
+input:checked + #green {
+    border: 8px solid #ffffff;
+    background-color:green !important;
+}
+input:checked + #red {
+    border: 8px solid #ffffff;
+    background-color: red !important;
+}

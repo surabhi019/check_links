@@ -1,0 +1,6 @@
+{% load static %}
+{% if pageExists == True %}
+    <img src={% static 'images/server on.png' %}  height="" width="5%" />
+{%  else  %}
+    <img src={% static 'images/server off.png'%}  height="" width="5%" />
+{% endif %}
